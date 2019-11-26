@@ -52,7 +52,7 @@ public class MetodV2 {
             return k[n];
         }else {
             if (k[n] == 0){
-            k[n] = ((2*Math.pow(h,2)*f(x) - (2 - h*p(x))*k(n-1,x)))    /     (2*Math.pow(h,2)*q(x) - 4 - (2-h*p(x))*l(n,x-h));
+            k[n] = ((2*Math.pow(h,2)*f(x) - (2 - h*p(x))*k(n-1,x-h)))    /     (2*Math.pow(h,2)*q(x) - 4 - (2-h*p(x))*l(n,x));
             return k[n];}
             else return k[n];
         }
